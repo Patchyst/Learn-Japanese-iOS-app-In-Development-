@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "japanese-lucky-coin-cat-932261.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "japanese-lucky-coin-cat-932261@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "japanese-lucky-coin-cat-932261@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
