@@ -45,31 +45,22 @@ class HiraganaViewController: UIViewController {
         rowTenButton.setTitleColor(UIColor.clear, for: .normal)
     }
     @IBAction func rowOnePressed(_ sender: UIButton) {
-        if buttonClicked != true{
-            
-            buttonClicked = true
-        }
-        if isSelected{
-            sender.alpha = 1.0
-            isSelected = false
-        }
-        else{
-            sender.alpha = 0.5
-            isSelected = true
-            
-        }
+    }
+    @IBAction func subRowOnePressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func subRowTwoPressed(_ sender: UIButton) {
+        
     }
     @IBAction func rowTwoPressed(_ sender: UIButton) {
-        if isSelected{
-            sender.alpha = 1.0
-            isSelected = false
-        }
-        else{
-            sender.alpha = 0.5
-            isSelected = true
-            
-        }
+
     }
+    @IBAction func secondRowOnePressed(_ sender: UIButton) {
+    }
+    @IBAction func secondRowTwoPressed(_ sender: UIButton) {
+    }
+    
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         // Go to the Hiragana page
