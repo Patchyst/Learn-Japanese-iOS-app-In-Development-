@@ -53,20 +53,23 @@ class HiraganaViewController: UIViewController {
         rowTenButton.setTitleColor(UIColor.clear, for: .normal)
     }
     @IBAction func rowOnePressed(_ sender: UIButton) {
+        selectButton(buttonToSelect: sender)
     }
     @IBAction func subRowOnePressed(_ sender: UIButton) {
-        
+        selectButton(buttonToSelect: sender)  
     }
     
     @IBAction func subRowTwoPressed(_ sender: UIButton) {
-        
+        selectButton(buttonToSelect: sender)    
     }
     @IBAction func rowTwoPressed(_ sender: UIButton) {
-
+        selectButton(buttonToSelect: sender)
     }
     @IBAction func secondRowOnePressed(_ sender: UIButton) {
+        selectButton(buttonToSelect: sender)
     }
     @IBAction func secondRowTwoPressed(_ sender: UIButton) {
+        selectButton(buttonToSelect: sender)
     }
     
     
