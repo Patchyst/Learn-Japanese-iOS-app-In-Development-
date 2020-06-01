@@ -21,6 +21,18 @@ class HiraganaViewController: UIViewController {
     @IBOutlet weak var rowNineButton: UIButton!
     @IBOutlet weak var rowTenButton: UIButton!
     @IBOutlet weak var switchButton: UISwitch!
+    // func for button selection
+    func selectButton(buttonToSelect: UIButton){
+        let buttonList = [rowOneButton, rowTwoButton, rowThreeButton, rowFourButton, rowFiveButton, rowSixButton]
+        for button in buttonList {
+            if button == buttonToSelect{
+                button?.alpha = 1.0
+            }
+            else{
+                button?.alpha = 0.5
+            }
+        }
+    }
     // Loading view
     override func viewDidLoad() {
         super.viewDidLoad()
