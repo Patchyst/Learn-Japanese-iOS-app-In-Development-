@@ -8,11 +8,7 @@
 import UIKit
 
 class HiraganaViewController: UIViewController {
-    var isSelected: Bool = true
-    // Default row list is rowOne
     var rowList: [String] = ["rowOne"]
-    // Bool value for checking if row button has even been clicked or not, determining if default row list should be sent
-    var buttonClicked: Bool = false
     // Row IBoutlet
     @IBOutlet weak var rowOneButton: UIButton!
     @IBOutlet weak var rowTwoButton: UIButton!
