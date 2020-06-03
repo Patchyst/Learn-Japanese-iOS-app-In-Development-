@@ -16,10 +16,6 @@ class HiraganaViewController: UIViewController {
     @IBOutlet weak var rowFourButton: UIButton!
     @IBOutlet weak var rowFiveButton: UIButton!
     @IBOutlet weak var rowSixButton: UIButton!
-    @IBOutlet weak var rowSevenButton: UIButton!
-    @IBOutlet weak var rowEightButton: UIButton!
-    @IBOutlet weak var rowNineButton: UIButton!
-    @IBOutlet weak var rowTenButton: UIButton!
     @IBOutlet weak var switchButton: UISwitch!
     // func for button selection
     func selectButton(buttonToSelect: UIButton){
@@ -50,10 +46,6 @@ class HiraganaViewController: UIViewController {
         rowFourButton.setTitleColor(UIColor.clear, for: .normal)
         rowFiveButton.setTitleColor(UIColor.clear, for: .normal)
         rowSixButton.setTitleColor(UIColor.clear, for: .normal)
-        rowSevenButton.setTitleColor(UIColor.clear, for: .normal)
-        rowEightButton.setTitleColor(UIColor.clear, for: .normal)
-        rowNineButton.setTitleColor(UIColor.clear, for: .normal)
-        rowTenButton.setTitleColor(UIColor.clear, for: .normal)
     }
     @IBAction func rowOnePressed(_ sender: UIButton) {
         selectButton(buttonToSelect: sender)
