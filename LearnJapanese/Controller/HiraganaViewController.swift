@@ -86,13 +86,33 @@ class HiraganaViewController: UIViewController {
     }
     
     
-    @IBAction func buttonPressed(_ sender: UIButton) {
-        // Go to the Hiragana page
-        performSegue(withIdentifier: "goToHiraganaQuiz", sender: self)
-    }
-    
     @IBAction func backButtonPressed(_ sender: UIButton) {
         // return to main page
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func switchChanged(_ sender: UISwitch) {
+        if switchButton.isOn{
+            // disabling rows without dakuten
+            rowTwoButton.isEnabled = false
+            rowFiveButton.isEnabled = false
+            rowSixButton.isEnabled = false
+            rowTwoButton.backgroundColor = UIColor.clear
+            rowFiveButton.backgroundColor = UIColor.clear
+            rowSixButton.backgroundColor = UIColor.clear
+        }
+        else{
+            // renabling rows
+            rowTwoButton.isEnabled = true
+            rowFiveButton.isEnabled = true
+            rowSixButton.isEnabled = true
+            rowTwoButton.backgroundColor = UIColor.black
+            rowFiveButton.backgroundColor = UIColor.black
+            rowSixButton.backgroundColor = UIColor.black
+        }
+    }
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        // Go to the Hiragana page
+        performSegue(withIdentifier: "goToHiraganaQuiz", sender: self)
     }
 }
