@@ -9,7 +9,8 @@
 import UIKit
 
 class HiraganaQuizViewController: UIViewController {
-
+    var hiraganaLogic = HiraganaLogic()
+    var quizList = [[""]]
     override func viewDidLoad() {
         super.viewDidLoad()
 
