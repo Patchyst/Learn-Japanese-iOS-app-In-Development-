@@ -67,13 +67,22 @@ class HiraganaViewController: UIViewController {
         }   
     }
     @IBAction func rowTwoPressed(_ sender: UIButton) {
-        selectButton(buttonToSelect: sender)
+        let buttonState: Bool = selectButton(buttonToSelect: sender)
+        if buttonState{
+            quizList = hiraganaLogic.hiraganaGroupTwo
+        }
     }
     @IBAction func secondRowOnePressed(_ sender: UIButton) {
-        selectButton(buttonToSelect: sender)
+        let buttonState: Bool = selectButton(buttonToSelect: sender)
+        if buttonState{
+            quizList = [hiraganaLogic.hiraganaGroupTwo[1], hiraganaLogic.hiraganaGroupTwo[2]]
+        }
     }
     @IBAction func secondRowTwoPressed(_ sender: UIButton) {
-        selectButton(buttonToSelect: sender)
+        let buttonState: Bool = selectButton(buttonToSelect: sender)
+        if buttonState{
+            quizList = [hiraganaLogic.hiraganaGroupTwo[3], hiraganaLogic.hiraganaGroupTwo[4]]
+        }
     }
     
     
