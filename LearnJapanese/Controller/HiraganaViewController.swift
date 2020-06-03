@@ -23,13 +23,16 @@ class HiraganaViewController: UIViewController {
     @IBOutlet weak var switchButton: UISwitch!
     // func for button selection
     func selectButton(buttonToSelect: UIButton){
+        var buttonState: Bool = false
         let buttonList = [rowOneButton, rowTwoButton, rowThreeButton, rowFourButton, rowFiveButton, rowSixButton]
         for button in buttonList {
             if button == buttonToSelect{
                 button?.alpha = 1.0
+                buttonState = false
             }
             else{
                 button?.alpha = 0.5
+                buttonState = true
             }
         }
     }
