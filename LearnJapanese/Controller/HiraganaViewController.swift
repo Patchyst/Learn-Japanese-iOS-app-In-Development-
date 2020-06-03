@@ -48,14 +48,23 @@ class HiraganaViewController: UIViewController {
         rowSixButton.setTitleColor(UIColor.clear, for: .normal)
     }
     @IBAction func rowOnePressed(_ sender: UIButton) {
-        selectButton(buttonToSelect: sender)
+        let buttonState: Bool = selectButton(buttonToSelect: sender)
+        if buttonState{
+            quizList = hiraganaLogic.hiraganaGroupOne
+        }
     }
     @IBAction func subRowOnePressed(_ sender: UIButton) {
-        selectButton(buttonToSelect: sender)  
+        let buttonState: Bool = selectButton(buttonToSelect: sender)
+        if buttonState{
+            quizList = [hiraganaLogic.hiraganaGroupOne[1], hiraganaLogic.hiraganaGroupOne[2]]
+        }
     }
     
     @IBAction func subRowTwoPressed(_ sender: UIButton) {
-        selectButton(buttonToSelect: sender)    
+        let buttonState: Bool = selectButton(buttonToSelect: sender)
+        if buttonState{
+            quizList = [hiraganaLogic.hiraganaGroupOne[3], hiraganaLogic.hiraganaGroupOne[4]]
+        }   
     }
     @IBAction func rowTwoPressed(_ sender: UIButton) {
         selectButton(buttonToSelect: sender)
