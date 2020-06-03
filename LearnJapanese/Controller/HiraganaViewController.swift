@@ -8,8 +8,8 @@
 import UIKit
 
 class HiraganaViewController: UIViewController {
-    var rowList: [String] = ["rowOne"]
-    // Row IBoutlet
+    var hiraganaLogic = HiraganaLogic()
+    var quizList: [[String]] = [[""]]
     @IBOutlet weak var rowOneButton: UIButton!
     @IBOutlet weak var rowTwoButton: UIButton!
     @IBOutlet weak var rowThreeButton: UIButton!
