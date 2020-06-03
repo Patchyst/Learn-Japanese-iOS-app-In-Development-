@@ -11,6 +11,9 @@ import UIKit
 class HiraganaQuizViewController: UIViewController {
     var hiraganaLogic = HiraganaLogic()
     var quizList = [[""]]
+    @IBOutlet weak var answerOne: UIButton!
+    @IBOutlet weak var answerTwo: UIButton!
+    @IBOutlet weak var answerThree: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
