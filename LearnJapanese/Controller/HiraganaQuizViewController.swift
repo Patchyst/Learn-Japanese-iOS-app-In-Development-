@@ -16,9 +16,11 @@ class HiraganaQuizViewController: UIViewController {
     @IBOutlet weak var answerThree: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func answerButton(_ sender: UIButton) {
+        let questionGroup = hiraganaLogic.generateQuestions(questionLength: quizList.count, questionGroup: quizList)
+        // Unfin
+    }
+}   
 }
