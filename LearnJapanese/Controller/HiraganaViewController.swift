@@ -115,4 +115,8 @@ class HiraganaViewController: UIViewController {
         // Go to the Hiragana page
         performSegue(withIdentifier: "goToHiraganaQuiz", sender: self)
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! HiraganaQuizViewController
+        destination.quizList = quizList
+    }
 }
