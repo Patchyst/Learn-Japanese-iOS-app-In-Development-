@@ -9,6 +9,8 @@ struct HiraganaLogic {
         let randomGroup: Int
         randomGroup = Int.random(in: 0 ... questionLength - 1)
         let group = questionGroup[randomGroup]
+        let randomQuestion = Int.random(in: 0 ... group.count - 1)
+        let question = group[randomQuestion]
         return group
     }
     }
