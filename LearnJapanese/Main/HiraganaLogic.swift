@@ -7,10 +7,13 @@ struct HiraganaLogic {
     // Unfinished function
     func generateQuestions(questionLength: Int, questionGroup: [[String]]) -> [String]{
         let randomGroup: Int
+        var questionOne: Int
+        var questionTwo: Int
         randomGroup = Int.random(in: 0 ... questionLength - 1)
         let group = questionGroup[randomGroup]
         let randomQuestion = Int.random(in: 0 ... group.count - 1)
-        let question = group[randomQuestion]
+        questionOne = questionLogic.checkMatch(valueOne: randomQuestion, valuetwo: nil, endRange: group.count - 1)
+        questionTwo = questionLogic.checkMatch(valueOne: randomQuestion, valuetwo: questionOne, endRange: group.count - 1)
         return group
     }
     }
